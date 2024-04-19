@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background: linear-gradient(135deg, #ffb7b7, #ffcbb0);
+    height: 100vh;
+    width: 100%;
+}
+.top{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px 0 15px;
+    margin-bottom: 20px;
+}
+.top a{
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.top .mid input{
+    width: 400px;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: text;
+    padding: 10px;
+}
+.top .mid input::placeholder{
+    color: white;
+}
+.top .mid button{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    color: #fff;
+    background: transparent;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: calc(0.5s);
+}
+.top .mid button:hover{
+    transform: scale(1.1);
+}
+.top .mid button:active{
+    transition: calc(0.1s);
+    transform: scale(0.9);
+}
+.top .right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.top .right a{
+    margin: 10px;
+    color: white;
+    transition: calc(0.5s);
+}
+.top .right a:hover{
+    transform: scale(1.1, 1.1);
+}
+.top .right a:active{
+    transform: scale(0.9, 0.9);
+    transition: calc(0.1s);
+}
+.top .right img{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: calc(0.5s);
+}
+.top .right img:hover{
+    transform: scale(1.1, 1.1);
+}
+.top .right img:active{
+    transform: scale(0.9, 0.9);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.create{
+    height: 100px;
+    background: linear-gradient(135deg, #ffc6c6, #fdd1ba);
+    border-radius: 20px;
+    width: 600px;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.create input{
+    width: 80%;
+    height: 80%;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    background: linear-gradient(135deg, #ffb7b7, #ffcbb0);
+    color: #fff;
+    cursor: text;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+.create input::placeholder{
+    color: white;
+}
+.create button{
+    height: 40px;
+    width: 80px;
+    border-radius: 15px;
+    border: none;
+    background: linear-gradient(330deg, #feb4b4, #ffeac9);
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.create button:hover{
+    background: linear-gradient(330deg, #ffbdbd, #ffedd1);
+}
+.create button:active{
+    background: linear-gradient(330deg, #fec6c6, #fff2dc);
+    transform: scale(0.9, 0.9);
+    transition: calc(0.2s);
+}
+.news{
+    margin-top: 20px;
+    border-radius: 20px;
+    max-width: 600px;
+    height: 500px;
+    max-height: 500px;
+    background: linear-gradient(300deg, #ffc6c6, #fdd1ba);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #333;
+}
+.news .profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.news .profile img{
+    background-color: #333;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+.news .profile h3{
+    margin-left: 20px;
+}
+.news .images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.news img {
+    height: 150px;
+    width: 48%;
+    margin: 5px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: zoom-in;
+}
+
